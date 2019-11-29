@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background2">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/titulo"/>
+
+    <TextView
+    android:id="@+id/titulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Converter"
+    android:textColor="@android:color/white"
+    android:textSize="50dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="15dp"
+    />
+
+    <TextView
+        android:id="@+id/unitType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select unit type:"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/titulo"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/unitType"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="30dp"
+
+        >
+
+    </Spinner>
+    <TextView
+        android:id="@+id/units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select units:"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/unitType"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/from"
+        android:layout_below="@id/units"
+        android:layout_marginTop="9dp"
+
+
+        />
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/units"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/from"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="35dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerUnits2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/to"
+        android:layout_below="@id/from"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="10dp"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@id/spinnerUnits"
+        android:layout_below="@+id/units"
+        android:maxLength="8"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cantidad"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/spinnerUnits2"
+        android:inputType="number"
+
+
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string-array name="typeOfUnits">
+
+        <item>Foreign exchange</item>
+        <item> Data units</item>
+        <item>Temperature</item>
+        <item>Distance</item>
+
+    </string-array>
+
+    <string-array name="units_temperature_array">
+        <item>Fahrenheit</item>
+        <item>Celcius</item>
+    </string-array>
+    <string-array name="units_distance_array">
+        <item>Kilometer</item>
+        <item>mile</item>
+    </string-array>
+
+    <string-array name="foreign_exchange_array">
+        <item>Euro</item>
+        <item>Dollar</item>
+        <item>Pound</item>
+        <item>Yen</item>
+    </string-array>
+
+    <string-array name="data_units_array">
+        <item>Kilobyte</item>
+        <item>Megabyte</item>
+        <item>Gigabyte</item>
+        <item>Terabyte</item>
+    </string-array>
+</resources>
